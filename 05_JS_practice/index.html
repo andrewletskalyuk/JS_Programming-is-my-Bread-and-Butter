@@ -11,27 +11,35 @@
 
 <body>
     <div class="firstContainer">
-        <img src="form/logo.png" alt="">
-        <p></p>
-        <input class="input100 userName" type="text" name="name" placeholder="Імя">
-        <p></p>
-        <input class="input100 userSerName" type="text" name="surname" placeholder="Прізвище">
-        <div class="input100">
-            <input type="radio" title="Чоловіча">
-            Чоловіча<br>
-            <input type="radio" title="Чоловіча">
-            Жіноча
+        <div class="container">
+            <img src="form/logo.png" alt="">
         </div>
-        <input class="input100" type="text" name="email" placeholder="Email">
-        <p></p>
-        <input class="input100" type="password" name="pass" placeholder="Пароль">
-        <p></p>
-        <input class="input100" type="password" name="pass" placeholder="Підтвердження паролю">
-        <div class="input100">
+        <div class="container">
+            <div class="row">
+                <input class="m-2 input100 userName" type="text" name="name" placeholder="Ім'я">
+                <input class="m-2 input100 userSerName" type="text" name="surname" placeholder="Прізвище">
+            </div>
+        </div>
+        <div class="container">
+            <div class="">
+                <input type="radio" name="sex" title="Чоловіча" id="male"><span>Чоловіча</span>
+                <input type="radio" name="sex" title="Жіноча" id="female"><span>Жіноча</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <input class="m-2 input100" type="text" name="email" placeholder="Email">
+                <input class="m-2 input100" type="password" name="pass" placeholder="Пароль">
+                <input class="m-2 input100" type="password" name="pass" placeholder="Підтвердження паролю">
+            </div>
+        </div>
+        <div class="m-2">
             <input type="checkbox" class="checkBoxInput" label="Я не робот">
-            <p>Я не робот</p>
+            <span> Я не робот</span>
         </div>
-        <button class="buttonInput">Зареєструватися</button>
+        <div class="container text-center">
+            <button type="button" class="btn btn-warning">Зареєструватися</button>
+        </div>
     </div>
 
     <script src="js/scriptPractice.js"></script>
