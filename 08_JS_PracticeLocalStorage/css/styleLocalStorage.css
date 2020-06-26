@@ -1,0 +1,35 @@
+.WJZet {
+    background-image: url(../img/45-degree-fabric-light.png);
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    width: 500px;
+    max-height: 1000px;
+    display: inline-block;
+}
+
+input{
+    height: 50px;
+}
+
+i{
+    font-size: 40px;
+}
+
+.btnZ{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    border-left: 2px solid black;
+}
+
+.InnerValue{
+    display: none;
+}
+
+.newValue{
+    display: block;
+}

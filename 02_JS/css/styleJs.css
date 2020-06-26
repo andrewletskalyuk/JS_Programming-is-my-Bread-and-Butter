@@ -1,0 +1,38 @@
+body {
+    background-color: aquamarine;
+}
+
+#first {
+    height: 100px;
+}
+
+.center {
+    color: yellow;
+    text-align: center;
+}
+
+.country {
+    width: 50%;
+    margin: 0 auto;
+    border: inset 5px solid grey;
+    background-color: teal;
+}
+
+.country p {
+    color: royalblue;
+}
+
+span{
+    font-weight: bold;
+    color: darkblue;
+    font-size: 18px;
+}
+
+#ua, #pl, #gm, #fr{
+    background-color: rgb(202, 188, 176);
+    font-style: italic;
+    font-size: 22;
+    color: green;
+    display: none;
+}
+

@@ -1,0 +1,80 @@
+/* .mainMenu {
+    list-style-type: none;
+    background-color: #af2646;
+    width: 300px;
+} */
+
+.elements {
+    height: auto;
+    line-height: 40px;
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    color: white;
+}
+
+
+.vertical-menu a {
+    /* background-color: #af2646; */
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 300px;
+    /*  border: 1px solid white; */
+}
+
+.vertical-menu a:hover {
+    background-color: #7d2136;
+    text-decoration: none;
+    color: white;
+}
+
+.marLeftI {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.innerMenu,
+.innerMenuA,
+.innerMenuB {
+    background-color: #5e252c;
+    width: 300px;
+    display: none;
+}
+
+.innerMenu a:hover,
+.innerMenuA a:hover,
+.innerMenuB a:hover {
+    background-color: #c03344;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.bgDark {
+    background-color: #af2646;
+    width: 300px;
+}
+
+.innerText {
+    background-image: url("/img/language-icon.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+}
+
+.innerTextSecond{
+    background-image: url("/img/notification.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+}
+
+.innerTextThird{
+    background-image: url("/img/privacy-policy.png");
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+}

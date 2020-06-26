@@ -1,0 +1,30 @@
+.blockFor{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(194, 218, 179);
+    margin: 10px auto;
+}
+
+.forPaint{
+    width: 30px;
+    height: 30px;
+    background-color: royalblue;
+    margin: 5px;
+}
+
+.blocksForThirdTask{
+    width: 250px;
+    height: 77px;
+}
+
+.sectorV{
+    background-color: rgb(230, 178, 129);
+}
+
+.textAreaContainer{
+    width: max-content;
+}
+
+.buttonAdd{
+    width: 100%;
+}

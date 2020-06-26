@@ -1,0 +1,15 @@
+.firstContainer{
+    background-color: grey;
+    border-radius: 1%;
+    margin: 10px auto;
+    width: 330px;
+}
+
+.input100{
+    width: 300px;
+    margin-left: 15px;
+}
+
+.buttonOn{
+    background-color: black;
+}

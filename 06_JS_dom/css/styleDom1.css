@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-family: Algerian;
+    text-transform: uppercase;
+    color: orange;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body {
+    background: rgba(73, 155, 234, 1);
+    background: -moz-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.6) 49%, rgba(139, 191, 247, 0.39) 75%, rgba(139, 191, 247, 0.18) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73, 155, 234, 1)), color-stop(49%, rgba(32, 124, 229, 0.6)), color-stop(75%, rgba(139, 191, 247, 0.39)), color-stop(100%, rgba(139, 191, 247, 0.18)));
+    background: -webkit-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.6) 49%, rgba(139, 191, 247, 0.39) 75%, rgba(139, 191, 247, 0.18) 100%);
+    background: -o-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.6) 49%, rgba(139, 191, 247, 0.39) 75%, rgba(139, 191, 247, 0.18) 100%);
+    background: -ms-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.6) 49%, rgba(139, 191, 247, 0.39) 75%, rgba(139, 191, 247, 0.18) 100%);
+    background: linear-gradient(to right, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 0.6) 49%, rgba(139, 191, 247, 0.39) 75%, rgba(139, 191, 247, 0.18) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#8bbff7', GradientType=1);
+    margin: 0;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+.col{
+    /* відцентровка текст ареа */
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.col:first-child{
+    border-right: 2px solid white;
+}
+.col:last-child input[type="button"]{
+    width:130px;
+    background: transparent;
+    outline: 0;
+    border: 1px solid white;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}

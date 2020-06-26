@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleJSPractice.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <title>Task practice</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="mainWindow">
+        <div class="text-uppercase vertical-menu">
+            <div class="bgDark" id="outMyAccount">
+                <a href="#" class="elements p-2 border border-light"><i class="far fa-user m-2"></i>my account<i
+                        class="fas fa-sort-down marLeftI"></i></a>
+                <div id="myaccount" class="innerMenu">
+                    <a href="#" class="elements p-2 border border-light "><i class="fas fa-sign-in-alt m-2">
+                        </i>sing in</a>
+                    <a href="#" class="elements p-2 border border-light"><i class="fas fa-user-plus m-2">
+                        </i>login</a>
+                </div>
+            </div>
+            <div class="bgDark" id="outMessages">
+                <a href="#" class="elements p-2 border border-light"><i class="far fa-envelope m-2"></i>messages<i
+                        class="fas fa-sort-down marLeftI"></i></a>
+                <div id="messages" class="innerMenuA">
+                    <a href="#" class="elements p-2 border border-light "><i class="fas fa-plus m-2">
+                        </i>new</a>
+                    <a href="#" class="elements p-2 border border-light"><i class="fas fa-envelope m-2">
+                        </i>sent</a>
+                    <a href="#" class="elements p-2 border border-light"><i class="fas fa-envelope-open m-2">
+                        </i>income</a>
+                </div>
+            </div>
+            <div class="bgDark" id="outSettings">
+                <a href="#" class="elements p-2 border border-light"><i class="fas fa-cog m-2"></i>settings<i
+                        class="fas fa-sort-down marLeftI"></i></a>
+            </div>
+            <div id="settings" class="innerMenuB">
+                <button type="" class="btn m-0 p-0 text-uppercase" data-toggle="modal"
+                    data-target="#exampleModalCenter">
+                    <a href="#openModal" class="elements p-2 border border-light"><i class="fas fa-language m-2">
+                        </i>language</a>
+                </button>
+                <button type="" class="btn m-0 p-0 text-uppercase" data-toggle="modal"
+                    data-target="#exampleModalNotification">
+                    <a href="#" class="elements p-2 border border-light"><i class="fas fa-bell m-2">
+                        </i>notification</a>
+                </button>
+                <button type="" class="btn m-0 p-0 text-uppercase" data-toggle="modal"
+                    data-target="#exampleModalPrivacy">
+                    <a href="#" class="elements p-2 border border-light"><i class="fas fa-user-secret m-2">
+                        </i>privacy</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <div class="modal-body innerText">
+                    <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non magnam quidem quis
+                        dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maiores officia
+                        molestiae voluptate ab corporis impedit, obcaecati id repellendus eveniet recusandae architecto
+                        cum eos reprehenderit expedita tempore quam accusamus molestias!
+                        Modi, officia? Magni nemo facilis modi vel, reprehenderit voluptatum aut beatae odit enim
+                        reiciendis optio accusamus in rerum quis cupiditate, dolorem delectus minus dicta recusandae
+                        officiis, quia perferendis ad placeat.
+                        Quasi repellat voluptates molestiae, totam voluptatum id officiis. Vero dignissimos ullam velit
+                        cupiditate, laborum autem amet quas recusandae, delectus eum eius qui quaerat nihil soluta. At
+                        suscipit voluptatem assumenda doloribus.
+                        Totam eligendi at unde, facilis mollitia architecto impedit quos natus sed id debitis excepturi
+                        ipsum saepe fugiat esse temporibus nostrum minus numquam quibusdam, atque quaerat voluptates
+                        ipsa sint? Blanditiis, in?
+                        Earum laborum maiores eum! Expedita illo, dolor, temporibus consequuntur amet omnis praesentium
+                        iusto, at eos placeat ducimus ex neque repellendus dolorum itaque ut? Vel perspiciatis laborum,
+                        facilis hic nemo neque!
+                        temporibus ex quibusdam laborum, accusantium commodi voluptatibus nobis reprehenderit iure
+                        distinctio? Voluptas autem labore eligendi culpa!</div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalNotification" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <div class="modal-body innerTextSecond">
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non magnam quidem quis
+                        dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maiores officia
+                        molestiae voluptate ab corporis impedit, obcaecati id repellendus eveniet recusandae architecto
+                        cum eos reprehenderit expedita tempore quam accusamus molestias!
+                        Modi, officia? Magni nemo facilis modi vel, reprehenderit voluptatum aut beatae odit enim
+                        reiciendis optio accusamus in rerum quis cupiditate, dolorem delectus minus dicta recusandae
+                        officiis, quia perferendis ad placeat.
+                        Quasi repellat voluptates molestiae, totam voluptatum id officiis. Vero dignissimos ullam velit
+                        cupiditate, laborum autem amet quas recusandae, delectus eum eius qui quaerat nihil soluta. At
+                        suscipit voluptatem assumenda doloribus.
+                        Totam eligendi at unde, facilis mollitia architecto impedit quos natus sed id debitis excepturi
+                        ipsum saepe fugiat esse temporibus nostrum minus numquam quibusdam, atque quaerat voluptates
+                        ipsa sint? Blanditiis, in?
+                        Earum laborum maiores eum! Expedita illo, dolor, temporibus consequuntur amet omnis praesentium
+                        iusto, at eos placeat ducimus ex neque repellendus dolorum itaque ut? Vel perspiciatis laborum,
+                        facilis hic nemo neque!
+                        temporibus ex quibusdam laborum, accusantium commodi voluptatibus nobis reprehenderit iure
+                        distinctio? Voluptas autem labore eligendi culpa!</p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalPrivacy" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <div class="modal-body innerTextThird">
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non magnam quidem quis
+                        dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maiores officia
+                        molestiae voluptate ab corporis impedit, obcaecati id repellendus eveniet recusandae architecto
+                        cum eos reprehenderit expedita tempore quam accusamus molestias!
+                        Modi, officia? Magni nemo facilis modi vel, reprehenderit voluptatum aut beatae odit enim
+                        reiciendis optio accusamus in rerum quis cupiditate, dolorem delectus minus dicta recusandae
+                        officiis, quia perferendis ad placeat.
+                        Quasi repellat voluptates molestiae, totam voluptatum id officiis. Vero dignissimos ullam velit
+                        cupiditate, laborum autem amet quas recusandae, delectus eum eius qui quaerat nihil soluta. At
+                        suscipit voluptatem assumenda doloribus.
+                        Totam eligendi at unde, facilis mollitia architecto impedit quos natus sed id debitis excepturi
+                        ipsum saepe fugiat esse temporibus nostrum minus numquam quibusdam, atque quaerat voluptates
+                        ipsa sint? Blanditiis, in?
+                        Earum laborum maiores eum! Expedita illo, dolor, temporibus consequuntur amet omnis praesentium
+                        iusto, at eos placeat ducimus ex neque repellendus dolorum itaque ut? Vel perspiciatis laborum,
+                        facilis hic nemo neque!
+                        temporibus ex quibusdam laborum, accusantium commodi voluptatibus nobis reprehenderit iure
+                        distinctio? Voluptas autem labore eligendi culpa!</p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/scriptTask.js"></script>
+    <script src="https://kit.fontawesome.com/e5665d24cf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

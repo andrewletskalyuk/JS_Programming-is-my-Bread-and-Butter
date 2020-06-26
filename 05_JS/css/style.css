@@ -1,0 +1,24 @@
+.first{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+}
+
+.second{
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+}
+body{
+    position: relative;
+    height: 1000px;
+}
+
+.focused{
+    border: 2px solid red;
+    color: darkcyan;
+    font-weight: bold;
+    font-style: italic;
+    outline: none;
+}
