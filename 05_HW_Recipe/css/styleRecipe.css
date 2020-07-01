@@ -1,0 +1,38 @@
+br {
+    color: black;
+}
+
+div h4 {
+    color: blanchedalmond;
+    vertical-align: middle;
+    
+}
+
+.unvisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+section{
+    font-family: 'Lobster', cursive;
+    color: cadetblue;
+}
+
+.iconS{
+    font-size: 24px;
+    color: cadetblue;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.iconsText, span{
+    color: cadetblue;
+    font-size: 25px;
+}
+.dishDesc{
+    color: cadetblue;
+    font-size: 20px;
+}
