@@ -45,9 +45,9 @@
                     <h4>Difficulty</h4>
                 </div>
                 <div class="" id="cookLevel">
-                    <input type="radio" name="difficulty" title="Easy" id="Easy" value="Easy"><span>Easy</span><br>
-                    <input type="radio" name="difficulty" title="Moderate" id="" value="Moderate"><span>Moderate</span><br>
-                    <input type="radio" name="difficulty" title="Hard" id="" value="Hard"><span>Hard</span>
+                    <input type="radio" name="difficulty" title="Easy" id="Easy" value="Easy"><label for="Easy">Easy</label><br>
+                    <input type="radio" name="difficulty" title="Moderate" id="Moderate" value="Moderate"><label for="Moderate">Moderate</label><br>
+                    <input type="radio" name="difficulty" title="Hard" id="Hard" value="Hard"><label for="Hard">Hard</label>
                 </div>
             </div>
             <div class="row m-1">
@@ -73,11 +73,12 @@
                 <textarea name="message" rows="5" cols="49" id="ingredients"></textarea>
             </div>
             <div class="container text-center">
-                <button class="btn btn-info">Зберегти</button>
             </div>
         </div>
-
     </section>
+    <div class="container text-center" id="btnSave">
+        <button class="btn btn-info">Зберегти</button>
+    </div>
 
     <section class="unvisible" id="describing">
         <div class="container text-center">

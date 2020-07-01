@@ -1,5 +1,5 @@
 document.querySelector("button").addEventListener('click', createRecipe);
-
+//document.getElementById("#describing").classList.add('unvisible');
 let icons = ["fas fa-user", "far fa-clock", "fab fa-buromobelexperte", "fas fa-burn"]
 let i = 1;
 
@@ -7,7 +7,7 @@ let i = 1;
 function createRecipe() {
     let describing = document.getElementById("describing");
     console.log(describing);
-    describing.classList.toggle("unvisible");
+    describing.classList.toggle("visible");
 
     let containerForInfo = document.createElement('div');
     containerForInfo.setAttribute('id', 'containerForInfo');
@@ -20,7 +20,7 @@ function createRecipe() {
     /* console.log(rName); */
     recipeName.innerText = rName.value;
     containerForInfo.append(recipeName);
-
+    
     let dishtype = $('#dishType option:selected').text();
     /* або можна було без JQuery */
     let dishTypeQ = document.getElementById("dishType");
@@ -71,8 +71,6 @@ function createRecipe() {
     rowsForIconsElement.append(levelCooking);
     containerForInfo.append(rowsForIconsElement);
     i++;
-    
-    
 }
 
 function getText(){
@@ -84,8 +82,16 @@ function getText(){
 function AddDescription(){
     let tempText = $('#description').val();
     console.log(tempText);
-    let textDescR = document.createElement('p');
-    document.getElementById("#describing").append(textDescR);
+    let textDescR = document.createElement('div');
+    textDescR.classList.add('container');
     textDescR.innerText = tempText;
-    document.appendChild(textDescR);
+    document.getElementById("describing").append(textDescR);
+    //document.appendChild(textDescR);
+
+    let tempText1 = $('#ingredients').val();
+    console.log(tempText1);
+    let textDescQ = document.createElement('div');
+    textDescQ.classList.add('container');
+    textDescQ.innerText = tempText1;
+    document.getElementById("describing").append(textDescQ);
 }
