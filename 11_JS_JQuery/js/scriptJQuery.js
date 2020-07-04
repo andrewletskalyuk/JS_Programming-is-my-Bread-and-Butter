@@ -152,7 +152,6 @@ let map;
 function initMap(newlat = 50.38319, newLng = 26.15593) {
     map = new google.maps.Map(document.getElementById("map"), {
         center: {
-
             lat: newlat,
             lng: newLng
         },
@@ -167,7 +166,7 @@ function initMap(newlat = 50.38319, newLng = 26.15593) {
     });
 }
 
-document.querySelector('.my-input').onleydown = sendSearch;
+document.querySelector('.my-input').onkeydown = sendSearch;
 
 function sendSearch(event) {
     if (event.keyCode == 13) {
