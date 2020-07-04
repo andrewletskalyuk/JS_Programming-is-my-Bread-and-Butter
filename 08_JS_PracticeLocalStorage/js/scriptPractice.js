@@ -13,13 +13,13 @@ let users = [
 ];
 
 function seeAll() {
-  // document.querySelector(".InnerValue").style.display = "none";
     let allInfo = document.querySelector(".test");
     allInfo.classList.toggle("InnerValue");
+    /* allInfo. */
 }
 
 let SingIn = document.querySelector("#btnGoTo").onclick = addInfo;
 
-function addInfo(){
-    let login =    
-}
+/* function addInfo(){
+   let login =    
+} */
