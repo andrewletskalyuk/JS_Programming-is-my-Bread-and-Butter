@@ -1,0 +1,23 @@
+#weather{
+    display: flex;
+}
+.input{
+    margin: auto !important;
+    background-color: rgb(245, 214, 167) !important; 
+    width: 600px;
+    height: auto;
+}
+
+.error{
+    margin: auto !important;
+    background-color: rgb(245, 183, 167) !important; 
+    width: 600px;
+    height: auto;
+    display: none;
+}
+
+#withoutResponce{
+    width: 600px;
+    height: auto;
+    background-color: coral;
+}

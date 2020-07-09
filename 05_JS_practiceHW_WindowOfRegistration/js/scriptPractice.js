@@ -43,7 +43,7 @@ function CheckRadioAndCheckBox() {
     }
     if(document.querySelector('input[type="checkbox"]').checked!=true)
     {
-        alert("Ти груСТний Робот іди в поле - заповнюй пробіли в лісі")
+        alert("не всі поля заповнені")
     }
 
     let passWords = document.querySelectorAll('input[type="password"]');

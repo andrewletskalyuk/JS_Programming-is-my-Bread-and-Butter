@@ -15,7 +15,7 @@ function getData() {
     let tel = document.querySelector("input[type='tel']").value;
     let message = document.querySelector("textarea").value;
 
-    const data = {
+    let data = {
         ID: Id++,
         Name: name,
         Email: email,
