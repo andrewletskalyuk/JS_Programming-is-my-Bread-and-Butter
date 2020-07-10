@@ -31,29 +31,28 @@ function displayDate() {
     userPassword.value = user[1].Password;
 }
 
-document.querySelector("#sabeChanges").addEventListener("click", () => {
+document.querySelector("#saveChanges").addEventListener("click", () => {
     /* let inputs = document.querySelectorAll(".form-control");
     console.log(inputs);
     for (let index = 0; index < inputs.length; index++) {
         inputs[index].addEventListener("change", myFunction)
     } */
-    console.log("дані зберігаються залежно від змін тексту в інпуті")
+    console.log(" просто експериментував");
 });
 
 let inputs = document.querySelectorAll(".form-control");
 console.log(inputs);
 for (let index = 0; index < inputs.length; index++) {
-    inputs[index].addEventListener("change", myFunction)
+    console.log(inputs[index]);    
+    inputs[index].addEventListener("change", myFunction);
 }
 
 function myFunction() {
-    console.log("привіт")
-    user[1].Name = document.querySelector("input[name='username']");
-    console.log(user[1].Name);
-    user[1].Email = document.querySelector("input[name='useremail']");
-    user[1].Login = document.querySelector("input[name='userlogin']");
-    user[1].Password = document.querySelector("input[name='userpassword']");
-    /* localStorage["users[1]"] = user[1]; */
-    localStorage.setItem("users[1]", JSON.stringify(user));
-    console.log(user[1]);
+    console.log(" функція, для зберігання даних");
+    user[1].Name = document.querySelector("input[name='username']").value;
+    //console.log(user[1].Name);
+    user[1].Email = document.querySelector("input[name='useremail']").value;
+    user[1].Login = document.querySelector("input[name='userlogin']").value;
+    user[1].Password = document.querySelector("input[name='userpassword']").value;
+    //console.log(user);
 }

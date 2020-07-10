@@ -92,7 +92,7 @@ button {
 
 #thirdBlock {
     padding: 100px 0;
-    background-color: khaki;
+    /* background-color: khaki; */
 }
 
 .containerForItem {
@@ -115,6 +115,7 @@ button {
 .pContainer {
     /* Style for "Marketplac" */
     width: 174px;
+    height: 40px;
     color: #143f5f;
     font-size: 14px;
     font-weight: 600;
@@ -164,7 +165,7 @@ hr {
     display: flex;
 }
 
-.wQLatest{
+.wQLatest {
     margin-bottom: 50px;
 }
 
@@ -182,5 +183,70 @@ hr {
     border-radius: 10px;
     background-color: #0e9aff;
     border: 0;
-    margin-top: 50px; 
+    margin-top: 50px;
+}
+
+.starsForRate {
+    color: #143f5f;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#fourthBlock {
+    /* Style for "Rectangle" */
+    background-color: #f3f4f5;
+}
+
+.wZLatest {
+    margin-top: 50px;
+}
+
+.fourthP {
+    /* Style for "Internatio" */
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fourthIMG {
+    max-width: 175px;
+    max-height: 175px;
+    margin: 10px;
+}
+
+.fourthZ {
+    margin: 15px;
+}
+
+.fourthFirst,
+.fifthFirst {
+    /* Style for "Why works" */
+
+    color: #143f5f;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.fourthFirst p {
+    padding-top: 50px;
+}
+
+.forImagesFourth {
+    height: 220px;
+}
+
+.fifthFirst p {
+    padding-top: 50px;
+}
+
+.styleForCategoriesFifthBlock {
+    width: 190px;
+    height: 68px;
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #f3f4f5;
+    background-color: #f6f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
