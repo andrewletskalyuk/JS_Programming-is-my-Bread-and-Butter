@@ -2,6 +2,16 @@
 $(".one") - клас
 $("#") - по id */
 
+$('#inputCity').on('keydown', function(e){
+    if (event.keyCode == 13) {
+        console.log("Да пребудет с нами JavaScript");
+        loadData();
+    }
+});
+
+
+
+
 let test = $("#test");
 console.log(test);
 
@@ -80,7 +90,6 @@ let geo = [];
 function loadData() {
     let city = document.querySelector('input[type="search"]').value;
     request(URL + city, showTerminals);
-
 }
 
 let cities = [];
@@ -166,13 +175,8 @@ function initMap(newlat = 50.38319, newLng = 26.15593) {
     });
 }
 
-document.querySelector('.my-input').onkeydown = sendSearch;
+//document.querySelector('.my-input').onkeydown = sendSearch;
 
-function sendSearch(event) {
-    if (event.keyCode == 13) {
-        loadData();
-    }
-}
 
 function filterSearch() {
     let li = cities.map((elem)=>{

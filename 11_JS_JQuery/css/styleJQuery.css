@@ -54,3 +54,6 @@ header h1{
     height: 40vh;
     overflow: auto; 
 }
+#searchBtn{
+    height: 40px !important;
+}
