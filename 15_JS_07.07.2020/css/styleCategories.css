@@ -1,0 +1,296 @@
+* {
+    font-family: 'Heebo', sans-serif;
+}
+
+.header {
+    background: url(../img/categoriesBG1.png) 0 100% no-repeat,
+        url(../img/categoriesBG2.png) 100% 0 no-repeat;
+
+    height: 160px;
+    /* overflow-x: hidden; */
+}
+
+.overLocal {
+    /* Style for "Overlocal" */
+    color: #0e9aff !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    padding: 0 70px 0 30px;
+}
+
+ul li a {
+    font-weight: 900;
+}
+
+.iconsForActions {
+    width: 150px;
+}
+
+.iconsForActions i {
+    /* Style for "Vector" */
+    width: 20px;
+    height: 20px;
+    color: #143f5f;
+    padding: 0 20px 0 20px;
+}
+
+.postAProWork {
+    /* Style for "Rectangle" */
+    width: 190px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid #f3f4f5;
+    background-color: #ffffff;
+    color: #143f5f;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.postAProWork button {
+    /* Style for "Vector" */
+    width: 26px;
+    height: 26px;
+    background-color: #0e9aff;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid #0e9aff;
+}
+
+.paddForGroupMenu {
+    padding: 0 50px;
+}
+
+.myPhoto {
+    /* Style for "Ellipse 2" */
+    width: 36px;
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.getStaff {
+    /* Style for "Get your s" */
+    color: #0e9aff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.btnIn {
+    /* Style for "Rectangle" */
+    box-shadow: 0 10px 50px rgba(14, 154, 255, 0.1);
+    border-radius: 10px;
+    background-color: #143f5f;
+    color: #ffffff;
+    border: 1px solid #143f5f;
+    width: 213px;
+    height: 60px;
+}
+
+.insideI {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pIn {
+    padding-left: 100px !important;
+}
+
+.postW {
+    white-space: nowrap;
+    /* Style for "Post a pro" */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+.postZ {
+    color: #0e9aff;
+    font-size: 30px;
+}
+
+.thirdSection {
+    /* Style for "Rectangle" */
+    background-color: #f3f4f5;
+}
+
+.seven {
+    /* Style for "7 MJOBS Av" */
+    color: #143f5f;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sort {
+    /* Style for "Sort by:" */
+    color: rgba(20, 63, 95, 0.5);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.padd {
+    padding-top: 50px;
+}
+
+.ahref {
+    /* Style for "Graphic De" */
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.categoriesA {
+    /* Style for "Categories" */
+    margin-top: 20px;
+    color: #143f5f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.proWorksCat {
+    padding: 50px;
+}
+
+.containerForItem {
+    /* Style for "Rectangle" */
+    width: 190px;
+    height: 291px;
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #f3f4f5;
+    /* margin: 10px; */
+    margin: 0 10px 0 10px;
+}
+
+.imgContainer {
+    /* Style for "Rectangle" */
+    max-width: 190px;
+    max-height: 150px;
+    background-color: #c4c4c4;
+    border-radius: 5%;
+}
+
+.pContainer {
+    /* Style for "Marketplac" */
+    width: 174px;
+    height: 30px;
+    color: #143f5f;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 7px 15px 7px;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.pSContainer {
+    /* Style for "Poberto Pe" */
+    width: 174px;
+    margin: 5px 7px 5px 7px;
+    color: #143f5f;
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1px solid #f3f4f5;
+}
+
+.eyeContainer {
+    /* Style for "7878" */
+    width: 79px;
+    color: #143f5f;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 7px 5px 7px;
+}
+
+.rate {
+    /* Style for "Vector" */
+    font-size: 10px;
+    height: 10px;
+    color: rgba(20, 63, 95, 0.5);
+}
+
+.dollar {
+    /* Style for "$12.00" */
+    width: 67px;
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 7px 5px 7px;
+}
+
+.startsIn {
+    display: flex;
+}
+
+.spaceB {
+    justify-content: space-around;
+}
+
+.starsForRate {
+    color: #143f5f;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.inputTags {
+    /* Style for "Filter by" */
+    color: rgba(20, 63, 95, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f3f4f5;
+}
+
+footer {
+    background-color: #143f5f;
+}
+
+.eigthBlock {
+    height: 85px;
+    color: white;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.eigthF {
+    /* Style for "Overlocal" */
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eightS {
+    /* Style for "Privacy Po" */
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.textIn {
+    /* Style for "© 2018 Ove" */
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.imgUpset {
+    /* Style for "Rectangle" */
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #f3f4f5;
+    background-color: #ffffff;
+}
+.dn{
+    display: none;
+}
+.df{
+    display: flex;
+}
+.containerForItem{
+    cursor: pointer;
+}

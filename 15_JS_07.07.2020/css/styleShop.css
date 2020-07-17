@@ -16,6 +16,7 @@ header {
     font-family: 'Heebo', sans-serif;
     font-size: 24px !important;
     font-weight: 700 !important;
+    padding: 0 70px 0 30px;
 }
 
 ul li a {
@@ -35,6 +36,10 @@ button {
 
 #singIn {
     color: aliceblue;
+}
+
+.shadow {
+    height: 40px;
 }
 
 .getyourstaff {
@@ -102,6 +107,7 @@ button {
     box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
     border-radius: 10px;
     border: 1px solid #f3f4f5;
+    /* margin: 10px; */
 }
 
 .imgContainer {
@@ -115,11 +121,12 @@ button {
 .pContainer {
     /* Style for "Marketplac" */
     width: 174px;
-    height: 40px;
+    height: 30px;
     color: #143f5f;
     font-size: 14px;
     font-weight: 600;
-    margin: 5px 7px 5px 7px;
+    margin: 5px 7px 15px 7px;
+    border-bottom: 1px solid #f3f4f5;
 }
 
 .pSContainer {
@@ -129,6 +136,7 @@ button {
     color: #143f5f;
     font-size: 12px;
     font-weight: 500;
+    border-bottom: 1px solid #f3f4f5;
 }
 
 .eyeContainer {
@@ -192,7 +200,8 @@ hr {
     font-weight: 500;
 }
 
-#fourthBlock {
+#fourthBlock,
+#sixthBlock {
     /* Style for "Rectangle" */
     background-color: #f3f4f5;
 }
@@ -219,7 +228,8 @@ hr {
 }
 
 .fourthFirst,
-.fifthFirst {
+.fifthFirst,
+.seventhBlock {
     /* Style for "Why works" */
 
     color: #143f5f;
@@ -244,9 +254,111 @@ hr {
     height: 68px;
     box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
     border-radius: 10px;
-    border: 1px solid #f3f4f5;
-    background-color: #f6f3f3;
+    border: 1px solid #bfc0c2;
+    background-color: #ffffff;
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Style for "Interactio" */
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.proWorksCat {
+    padding: 50px;
+}
+
+#seventhBlock {
+    background: url(../img/seventhCloudSecond.png) 100% 0 no-repeat,
+        url(../img/seventhCloudsFirst.png) 0 100% no-repeat;
+    height: 332px;
+    overflow-x: hidden;
+}
+
+.seventhP {
+    /* Style for "Thank you" */
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-Sixth {
+    /* Style for "Rectangle" */
+    width: 400px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #10bd40;
+}
+
+footer {
+    background-color: #143f5f;
+}
+
+.eigthBlock {
+    height: 85px;
+    color: white;
+    padding-left: 50px;
+}
+
+.eigthF {
+    /* Style for "Overlocal" */
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eightS {
+    /* Style for "Privacy Po" */
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.textIn {
+    /* Style for "© 2018 Ove" */
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-Sixth {
+    /* Style for "Go to Dash" */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    max-height: 150px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #143f5f;
+    z-index: 1;
+    color: white;
+    flex-wrap: wrap;
+    width: 380px;
+}
+
+.dropDown:hover .dropdownContent {
+    display: flex;
+    
+}
+
+.formatA {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 140px;
 }

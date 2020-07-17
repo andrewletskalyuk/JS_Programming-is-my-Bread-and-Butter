@@ -12,38 +12,58 @@ async function initAsync() {
 
 
 function postOurElements() {
-    let headerForContainver = document.querySelector("#headerForContainer");
-    for (let index = 0; index < data.data.length - 2; index++) {
-        let containerForItem = headerForContainver.querySelector(".containerForItem");
-        let img = document.querySelector("img");
-        console.log(data.data[index].icon);
-        document.querySelector("img").src = "img/" + data.data[index].icon + ".png";
+    //console.log(response);
+    localStorage.setItem('items', JSON.stringify(data));
 
+    let headerForContainver = document.querySelector("#headerForContainer");
+    for (let index = 0; index < data.data.length; index++) {
+        let containerForItem = headerForContainver.querySelector(".containerForItem");
+        /* let img = document.querySelector("img"); */
+        /* console.log(data.data[index].icon); */
+        document.querySelector("img").src = "img/" + data.data[index].icon + ".png";
         document.querySelector(".pContainer").innerText = data.data[index].name;
         document.querySelector(".pSContainer").innerText = data.data[index].author;
         document.querySelector("#views").innerText = data.data[index].view;
         document.querySelector("#price").innerText = data.data[index].price;
-
+        
         let stars = data.data[index].rating;
         let starsIn = containerForItem.querySelector(".startsIn, .rate");
-        console.log(starsIn);
+        /* console.log(starsIn); */
         for (let index2 = 0; index2 < stars; index2++) {
-            console.log(starsIn.children[index2])
+            /* console.log(starsIn.children[index2]); */
             starsIn.children[index2].classList.remove("rate");
         }
         let newItem = containerForItem.cloneNode(true);
         headerForContainver.append(newItem);
+        for (let index2 = 0; index2 < stars; index2++) {
+            starsIn.children[index2].classList.add("rate");
+        }
     }
+    document.querySelector(".containerForItem").remove();
 }
+
+let categories;
 
 window.addEventListener("load", () => {
     fetch('jsonFiles/categories.json').then(response => {
-        console.log(response);
+        /* console.log(response); */
         return response.json();
     }).then(data => {
-        console.log(data);
+        /* console.log(data); */
+        categories = data.data;
         letsFigureOurWhatInside(data.data);
-    })
+        let dropdownContent = document.getElementById("dropdownContent");
+        /* console.log(dropdownContent); */
+        for (let index = 0; index < categories.length; index++) {
+            let paragraph = document.createElement("a");
+            dropdownContent.append(paragraph);
+            paragraph.innerText = categories[index].name;
+            paragraph.classList.add("nav-link", "formatA");
+            paragraph.href = "#";
+            /* console.log(paragraph); */
+        }
+        /* console.log(categories); */
+    }).then(() => localStorage.setItem('categoriesKey', JSON.stringify(categories)));
 });
 
 function letsFigureOurWhatInside(dataIn) {
@@ -58,3 +78,7 @@ function letsFigureOurWhatInside(dataIn) {
         categories.append(element);
     });
 }
+
+$("#productsSeeAll").on('click', function () {
+    window.location.href = "categories.html";
+});
