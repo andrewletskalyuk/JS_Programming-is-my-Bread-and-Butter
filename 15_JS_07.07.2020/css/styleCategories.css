@@ -285,12 +285,147 @@ footer {
     border: 1px solid #f3f4f5;
     background-color: #ffffff;
 }
-.dn{
+
+.dn {
     display: none;
 }
-.df{
+
+.df {
     display: flex;
 }
-.containerForItem{
+
+.containerForItem {
     cursor: pointer;
+}
+
+.name {
+    /* Style for "Build Blac" */
+    color: #143f5f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.des {
+    /* Style for "Interactio" */
+    color: rgba(20, 63, 95, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#nameWithImage {
+    /* Style for "Rectangle" */
+    width: 768px;
+    height: 518px;
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    background-color: white !important;
+}
+
+.imgIn {
+    /* Style for "Rectangle" */
+    width: 730px;
+    height: 439px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+}
+
+.firstQuestion {
+    background-color: #f3f4f5;
+}
+
+.firstQuestion .container {
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.attach {
+    /* Style for "Rectangle" */
+    width: 768px;
+    height: 178px;
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 20px 0px 20px 0px;
+}
+
+.fest {
+    /* Style for "Attachment" */
+    color: #143f5f;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+.imgAtt {
+    /* Style for "Rectangle" */
+    width: 165px;
+    height: 100px;
+    border: 1px solid #f3f4f5;
+    background-color: #c4c4c4;
+    border-radius: 7px;
+}
+
+.description {
+    /* Style for "Good draw" */
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.13px;
+}
+
+#description,
+#price {
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#reciews {
+    /* Style for "Rectangle" */
+    width: 768px;
+    height: 62px;
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.priceSum {
+    /* Style for "$458.00" */
+    color: #143f5f;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.viewsRight {
+    /* Style for "Rectangle" */
+    box-shadow: 0 10px 10px rgba(14, 154, 255, 0.05);
+    height: 430px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.spaceB {
+    justify-content: space-around;
+}
+
+.dolPrice {
+    /* Style for "$458.00" */
+    color: #143f5f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.infoAboutDelivery {
+    /* Style for "Overall Ra" */
+    color: #143f5f;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cOrder {
+    /* Style for "Send Custo" */
+    color: #0e9aff;
+    font-size: 14px;
+    font-weight: 600;
 }

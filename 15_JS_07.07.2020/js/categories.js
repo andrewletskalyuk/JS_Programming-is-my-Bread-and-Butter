@@ -25,16 +25,11 @@ let itemsParse = JSON.parse(items);
 
 function showCategory(e) {
     console.log(e.target);
-    /* тут дописати фільтра, коли працюємо з категоріями */
     let targetCat = e.target.innerText;
     let id;
     let countId = 0;
     for (let i = 0; i < categoriesParse.length; i++) {
         if (targetCat == categoriesParse[i].name) {
-            /* console.log(targetCat);
-            console.log(categoriesParse[i].id); */
-            /*тепер перевіримо, чи є категорії таких товарів в нашому списку*/
-            /* postElementsById(categoriesParse[i].id); */
             id = categoriesParse[i].id;
             for (let j = 0; j < itemsParse.data.length; j++) {
                 if (itemsParse.data[j].categoryId == id) {
@@ -45,30 +40,31 @@ function showCategory(e) {
             document.getElementById("headerForItems").style.display = "flex";
         }
     }
-    /* console.log(countId); */
-    /*а тепер знаючи ід і чи є з таким ід продукти в нашому списку відтворимо це все*/
     postElementsByIdAndCount(id, countId);
-
     countId = 0;
     id = 0;
 }
 
 function postElementsByIdAndCount(id, countId) {
-    /* console.log(id);
-    console.log(countId); */
     if (countId == 0) {
         document.getElementById("headerForItems").style.display = "none";
         document.getElementById("imgWithMen").src = "img/upset.png";
+        Array.from(document.querySelectorAll('.containerForItem'))
+            .map(el => {
+                console.log(el);
+                el.classList.remove("dn");
+            });
     } else {
         document.getElementById("imgWithMen").src = "#";
         let elems = document.querySelectorAll('.containerForItem');
-        console.log(elems);
         for (let index = 0; index < elems.length; index++) {
-            console.log(elems[index].attributes.categoryId);
-            let idForIf = "categoryId=\"" + id.toString() + "\"";
-
-            if (elems[index].attributes.categoryId == id) {
-                console.log("щось сталось");
+            if (elems[index].getAttribute("categoryId") != id) {
+                /* console.log(elems[index]); */
+                elems[index].classList.add("dn");
+            }
+            else
+            {
+                elems[index].classList.remove("dn");
             }
         }
     }
@@ -113,12 +109,3 @@ function SeeDetails(e) {
     window.location.href = "item.html";
     console.log(e);
 }
-
-/* let products = document.querySelectorAll(".containerForItem");
-console.log(products);
-products.forEach(function (elem) {
-    elem.addEventListener("click", ()=>{
-        console.log("привіт клік");
-    });
-}); */
-

@@ -14,22 +14,219 @@
 </head>
 
 <body>
-    <header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis suscipit, deleniti non nihil libero
-            architecto qui expedita natus enim ullam, consequatur, dolor ea error labore. Tenetur non voluptas veniam
-            id?</p>
-    </header>
+    <header class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="navbar-brand m-2 overLocal">Overlocal</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="worksMenuItem">
+                        <a class="nav-link" href="#">Works <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconsForActions">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="paddForGroupMenu">
+                <div class="postAProWork d-flex">
+                    <div class="mr-auto m-2">Post a proWork</div>
+                    <div class="ml-auto m-2">
+                        <button class="">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="paddForGroupMenu">
+                <div class="btn-group">
+                    <img src="img/myFoto.jpg" alt="" class="myPhoto">
+                    <button type="button" class="btn btn-light">Andrii Letskaliuk</button>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split"
+                        id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        data-reference="parent">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="#">Sing In</a>
+                        <a class="dropdown-item" href="#">Sing Out</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Exit</a>
+                    </div>
+                </div>
+            </div>
 
+        </nav>
+    </header>
+    <section class="header">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="getStaff">Get your stuffs done</div>
+                <div class="p-2 pIn">
+                    <button class="btnIn">
+                        <div class="container-fluid d-flex h-100">
+                            <div class="col justify-content-center align-self-center postW">Post a proWork</div>
+                            <i class="fas fa-plus-circle col justify-content-center align-self-center postZ"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="firstQuestion">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="col" id="nameWithImage">
+                        <div class="row  pt-3">
+                            <div class="col-8">
+                                <p class="name"></p>
+                                <p class="des">Interaction Design</p>
+                            </div>
+                            <div class="col-4 text-right">
+                                <p class="name">Last Modified:</p>
+                                <p class="des">November 14, 2018</p>
+                            </div>
+                            <img src="" alt="" class="imgIn">
+                        </div>
+                    </div>
+                    <div class="col attach">
+                        <p class="fest"> <i class="fas fa-air-freshener"></i>Attachments</p>
+                        <div class="container-fluid" id="imgInside">
+                            <img src="" alt="" class="imgAtt">
+                        </div>
+                    </div>
+                    <div class="col" id="description">
+                        <p class="fest">Description</p>
+                        <p id="descriptionP" class="description"></p>
+                    </div>
+                    <div class="col mb-3" id="reciews">
+                        <div class="d-flex h-100">
+                            <div class="justify-content-center align-self-center">
+                                <p id="reciewsTotal" class="fest"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5" id="price">
+                        <div class="d-flex h-100">
+                            <div class="col-6 justify-content-center align-self-center">
+                                <p id="namePrice" class="fest"></p>
+                                <p id="" class="description">Interaction Design</p>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="text-right justify-content-between priceSum mt-2">
+                                    <span class="">$</span>
+                                    <span class="" id="dollarPrice"></span>
+                                    <button type="button" class="btn btn-success">Order now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 viewsRight pt-3">
+                    <div class="row">
+                        <div class="col-8 text-left">
+                            <i class="fas fa-eye">
+                                <span id="viewRight"></span>
+                            </i>
+                            <div class="spaceB mt-2">
+                                <div class="d-flex starsIn">
+                                    <span att="rating" class="fa fa-star rate"></span>
+                                    <span att="rating" class="fa fa-star rate"></span>
+                                    <span att="rating" class="fa fa-star rate"></span>
+                                    <span att="rating" class="fa fa-star rate"></span>
+                                    <span att="rating" class="fa fa-star rate"></span>
+                                    <p class="starsForRate"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <p class="dolPrice text-right"></p>
+                        </div>
+
+                    </div>
+                    <div class="infoAboutDelivery">
+                        <div class="d-flex mb-2">
+                            <div class="p-2">
+                                <span class="fa fa-star"></span>
+                                Overall Rate</div>
+                            <div class="ml-auto p-2 ">0</div>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <div class="p-2">
+                                <i class="fas fa-image"></i>
+                                Reviews</div>
+                            <div class="ml-auto p-2" id="reviewsQ"></div>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <div class="p-2">
+                                <i class="fas fa-shopping-bag"></i>
+                                Sales</div>
+                            <div class="ml-auto p-2" id="salesIn"></div>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <div class="p-2">
+                                <i class="fas fa-calendar-day"></i>
+                                Time delivery</div>
+                            <div class="ml-auto p-2" id="deliveryIn"></div>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <button class="col-12 btn btn-success">Order Now</button>
+                        </div>
+                        <div>
+                            <h5 class="font-weight-bold">Extra</h5>
+                            <p class="infoAboutDelivery">There are no Extra Services</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="cOrder">
+                                    Send Custom Order
+                                    <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-
+        <div class="d-flex align-items-center eigthBlock">
+            <div class="p-2 eigthF">Overlocal</div>
+            <div class="p-2 eightS">Privacy Policy</div>
+            <div class="p-2 eightS">Terms and Conditions</div>
+            <div class="ml-auto">
+                <div class="container d-flex">
+                    <div class="row align-items-center">
+                        <div class="col mx-auto textIn">
+                            <i class="far fa-copyright"></i>
+                            2018 OverLocal. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
 
-    <script src="js/categories.js"></script>
+    <script src="js/item.js"></script>
 
     <script src="https://kit.fontawesome.com/e5665d24cf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
